@@ -1,0 +1,18 @@
+-- create table emp as select * from scott.emp
+
+-- select *  from emp order by deptno;
+
+-- 1st done
+-- select * from emp where sal = (select max(sal) from emp )
+
+-- 2nd qsn
+    -- select deptno,sal from emp where sal in (select max(sal) from emp group by deptno) order by deptno
+
+
+-- 3rd qsn
+--  select deptno,sal from emp where sal in (select min(sal) from emp group by deptno) order by deptno
+
+-- 4th qsn
+    select * from emp limit 1 order by sal
+
+
